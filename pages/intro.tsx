@@ -4,12 +4,12 @@ import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 
 const Intro = () => {
-  const message1 = `Je tiens tout d'abords à te dire combien t'es une collègue formidable. C'est hyper agréable de te voir toujours de bonne humeur, toujours positive, bienveillante et motivante.`;
-  const message12 = `T'es comme le Z de Zeffy, t'es la first et un pillier pour la team.`;
+  const message1 = `Je tiens tout d'abords à te dire combien t'es une collègue formidable. C'est hyper agréable de te voir toujours de bonne humeur, toujours positive, bienveillante et motivante !`;
+  const message12 = `T'es comme le Z de Zeffy, t'es une numéro uno dans la team.`;
   const message2 =
-    "C'est fucking nice de bosser avec toi. Bravo pour ta reconversion en talent recruiter";
+    "C'est fucking nice de bosser avec toi. Bravo pour ta reconversion en talent recruiter !";
   const message3 =
-    "Encore joyeux secret santa. J'espère que ces recommendations te plairont (ou a default, te feront rire)";
+    "Encore joyeux secret santa. J'espère que ces recommendations te plairont (ou a default, te feront sourir)";
 
   const [step, setStep] = useState(0);
   const router = useRouter();
