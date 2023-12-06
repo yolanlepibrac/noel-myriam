@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Snowfall from "react-snowfall";
 import { Gift } from "../components/Gift/Gift";
+import { Modal } from "../components/Modal/Modal";
 
 const Gifts = () => {
   const [color, setColor] = useState("#dee4fd");
@@ -11,8 +12,14 @@ const Gifts = () => {
   const [wind, setWind] = useState<[number, number]>([-0.5, 2.0]);
 
   const [openedGifts, setOpenedGifts] = useState<number[]>([]);
+  const [openedGift, setOpenedGift] = useState<number | null>(null);
   const openGift = (value: number) => () => {
     setOpenedGifts([...openedGifts, value]);
+    setOpenedGift(value);
+  };
+
+  const onCloseGift = () => {
+    setOpenedGift(null);
   };
 
   return (
@@ -25,6 +32,7 @@ const Gifts = () => {
           overflow: "hidden",
         }}
       >
+        {openedGift && <Modal openedGift={openedGift} onClose={onCloseGift} />}
         <Snowfall
           color={color}
           snowflakeCount={snowflakeCount}

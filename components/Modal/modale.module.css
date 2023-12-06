@@ -1,0 +1,13 @@
+.spinning-image {
+  animation: spin 2s linear infinite;
+}
+
+.fadeIn {
+  /* Initial state of the element before animation starts */
+  opacity: 0;
+
+  /* Apply the fadeIn animation */
+  animation-name: fadeIn;
+  animation-duration: 1s; /* Animation takes 1 second */
+  animation-fill-mode: forwards; /* Keeps the element at the end state of the animation */
+}

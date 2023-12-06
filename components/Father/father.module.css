@@ -73,7 +73,7 @@
     height: 12%;
     background: var(--eyes);
     border-radius: 50%;
-    animation: blink 5s infinite linear;
+    animation: blink 1s infinite linear;
   }
   
   .eye + .eye {
@@ -117,7 +117,7 @@
     border-radius: 100% 10% 100% 0;
     transform-origin: top right;
     transform: translate(-100%, 0) rotate(25deg);
-    animation: moveMustache 7s infinite linear;
+    animation: moveMustache 3s infinite linear;
   }
   
   .mustache + .mustache {
@@ -125,7 +125,7 @@
     border-radius: 10% 100% 0 100%;
     transform-origin: top left;
     transform: rotate(-25deg);
-    animation: moveMustache2 7s infinite linear;
+    animation: moveMustache2 3s infinite linear;
   }
   
   .hat {

@@ -5,14 +5,20 @@ import { Button } from "../components/Button/Button";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={{
+        backgroundImage: `url("https://img.freepik.com/vecteurs-libre/fond-rouge-noel-conception-flocons-neige-lumieres-bokeh_1048-14954.jpg")`,
+        backgroundSize: "cover",
+      }}
+    >
       <Head>
-        <title>Create Next App</title>
+        <title>Myriam Noel</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className={styles.title}>
+        <h1 className={styles.title} style={{ color: "white" }}>
           Joyeux noel <strong className={styles.myriam}>Myriam</strong> !!!
         </h1>
 
@@ -38,7 +44,7 @@ export default function Home() {
             marginBottom: 50,
           }}
         >
-          <Button href="/gifts">Get my gifts</Button>
+          <Button href="/intro">Continue</Button>
         </div>
       </main>
 
