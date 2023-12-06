@@ -24,10 +24,11 @@ const items: [
 ] = [
   {
     intro: "Quoi lire en 2024",
-    title: "Bernard Werbe, L'encyclopédie du savoir relatif et absolu",
+    title:
+      "Encyclopédie ou Dictionnaire raisonné des sciences, des arts et des métiers. Denis Diderot",
     description:
       "Je l'ai (évidemment) pas lu, mais si tu le fait, je le fait aussi",
-    source: "/encyclopedie.jpeg",
+    source: "/diderot.jpeg",
   },
   {
     intro: "Quoi écouter en 2024",
