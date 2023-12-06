@@ -12,12 +12,13 @@ export const Gift = ({
 }) => {
   const isOpened = openedGifts.includes(value);
 
-  const containerStyles = {
+  const containerStyles: Record<string, string | number> = {
     width: 150,
     height: 150,
     display: "inline-flex",
     margin: 70,
     marginTop: 30,
+    position: "relative",
   };
 
   if (isOpened) {
@@ -25,7 +26,7 @@ export const Gift = ({
   }
   return (
     <div style={containerStyles} onClick={openGift(value)}>
-      <div>
+      <div style={{ position: "absolute", top: 0, left: 0 }}>
         <div
           className={classnames(
             styles["col-12"],
